@@ -53,6 +53,11 @@
             ClearEntry = new Button();
             Percent = new Button();
             Display = new TextBox();
+            button5 = new Button();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
             SuspendLayout();
             // 
             // Reciprocal
@@ -299,18 +304,68 @@
             // 
             // Display
             // 
-            Display.Location = new Point(148, 105);
+            Display.Location = new Point(155, 57);
             Display.Multiline = true;
             Display.Name = "Display";
-            Display.Size = new Size(413, 174);
+            Display.Size = new Size(406, 174);
             Display.TabIndex = 25;
             Display.TextAlign = HorizontalAlignment.Right;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(478, 260);
+            button5.Name = "button5";
+            button5.Size = new Size(83, 34);
+            button5.TabIndex = 30;
+            button5.Text = "MS";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(155, 260);
+            button1.Name = "button1";
+            button1.Size = new Size(81, 34);
+            button1.TabIndex = 31;
+            button1.Text = "MC";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(233, 260);
+            button2.Name = "button2";
+            button2.Size = new Size(81, 34);
+            button2.TabIndex = 32;
+            button2.Text = "MR";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(399, 260);
+            button3.Name = "button3";
+            button3.Size = new Size(84, 34);
+            button3.TabIndex = 33;
+            button3.Text = "M-";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(311, 260);
+            button4.Name = "button4";
+            button4.Size = new Size(90, 34);
+            button4.TabIndex = 34;
+            button4.Text = "M+";
+            button4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(735, 805);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(button5);
             Controls.Add(Display);
             Controls.Add(Percent);
             Controls.Add(ClearEntry);
@@ -369,5 +424,10 @@
         private Button ClearEntry;
         private Button Percent;
         private TextBox Display;
+        private Button button5;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
     }
 }
