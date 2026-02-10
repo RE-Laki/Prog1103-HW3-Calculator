@@ -52,12 +52,12 @@
             Clear = new Button();
             ClearEntry = new Button();
             Percent = new Button();
-            Display = new TextBox();
             button5 = new Button();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            Display = new Label();
             SuspendLayout();
             // 
             // Reciprocal
@@ -302,15 +302,6 @@
             Percent.Text = "%";
             Percent.UseVisualStyleBackColor = true;
             // 
-            // Display
-            // 
-            Display.Location = new Point(155, 57);
-            Display.Multiline = true;
-            Display.Name = "Display";
-            Display.Size = new Size(406, 174);
-            Display.TabIndex = 25;
-            Display.TextAlign = HorizontalAlignment.Right;
-            // 
             // button5
             // 
             button5.Location = new Point(478, 260);
@@ -356,17 +347,25 @@
             button4.Text = "M+";
             button4.UseVisualStyleBackColor = true;
             // 
+            // Display
+            // 
+            Display.Location = new Point(155, 46);
+            Display.Name = "Display";
+            Display.Size = new Size(406, 194);
+            Display.TabIndex = 35;
+            Display.TextAlign = ContentAlignment.BottomRight;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(735, 805);
+            Controls.Add(Display);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(button5);
-            Controls.Add(Display);
             Controls.Add(Percent);
             Controls.Add(ClearEntry);
             Controls.Add(Clear);
@@ -394,7 +393,6 @@
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -423,11 +421,11 @@
         private Button Clear;
         private Button ClearEntry;
         private Button Percent;
-        private TextBox Display;
         private Button button5;
         private Button button1;
         private Button button2;
         private Button button3;
         private Button button4;
+        private Label Display;
     }
 }
