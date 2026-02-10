@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             btnReciprocal = new Button();
-            btnSquare = new Button();
             btnSqrt = new Button();
             btnSeven = new Button();
             btnEight = new Button();
@@ -50,12 +49,9 @@
             btnEqual = new Button();
             btnBack = new Button();
             btnClear = new Button();
-            btnClearEntry = new Button();
-            btnPercent = new Button();
             btnMS = new Button();
             btnMC = new Button();
             btnMR = new Button();
-            btnMM = new Button();
             btnMP = new Button();
             lblDisplay = new Label();
             SuspendLayout();
@@ -65,27 +61,17 @@
             btnReciprocal.Font = new Font("Segoe UI", 14F);
             btnReciprocal.Location = new Point(155, 380);
             btnReciprocal.Name = "btnReciprocal";
-            btnReciprocal.Size = new Size(97, 66);
+            btnReciprocal.Size = new Size(132, 66);
             btnReciprocal.TabIndex = 1;
             btnReciprocal.Text = "1/x";
             btnReciprocal.UseVisualStyleBackColor = true;
             // 
-            // btnSquare
-            // 
-            btnSquare.Font = new Font("Segoe UI", 14F);
-            btnSquare.Location = new Point(258, 380);
-            btnSquare.Name = "btnSquare";
-            btnSquare.Size = new Size(97, 66);
-            btnSquare.TabIndex = 2;
-            btnSquare.Text = "x^2";
-            btnSquare.UseVisualStyleBackColor = true;
-            // 
             // btnSqrt
             // 
             btnSqrt.Font = new Font("Segoe UI", 14F);
-            btnSqrt.Location = new Point(361, 380);
+            btnSqrt.Location = new Point(293, 380);
             btnSqrt.Name = "btnSqrt";
-            btnSqrt.Size = new Size(97, 66);
+            btnSqrt.Size = new Size(124, 66);
             btnSqrt.TabIndex = 3;
             btnSqrt.Text = "Sqrt";
             btnSqrt.UseVisualStyleBackColor = true;
@@ -214,9 +200,9 @@
             // btnDivide
             // 
             btnDivide.Font = new Font("Segoe UI", 14F);
-            btnDivide.Location = new Point(464, 380);
+            btnDivide.Location = new Point(423, 380);
             btnDivide.Name = "btnDivide";
-            btnDivide.Size = new Size(97, 66);
+            btnDivide.Size = new Size(138, 66);
             btnDivide.TabIndex = 16;
             btnDivide.Text = "/";
             btnDivide.UseVisualStyleBackColor = true;
@@ -265,9 +251,9 @@
             // btnBack
             // 
             btnBack.Font = new Font("Segoe UI", 14F);
-            btnBack.Location = new Point(464, 308);
+            btnBack.Location = new Point(368, 308);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(97, 66);
+            btnBack.Size = new Size(193, 66);
             btnBack.TabIndex = 21;
             btnBack.Text = "<";
             btnBack.UseVisualStyleBackColor = true;
@@ -275,32 +261,12 @@
             // btnClear
             // 
             btnClear.Font = new Font("Segoe UI", 14F);
-            btnClear.Location = new Point(361, 308);
+            btnClear.Location = new Point(155, 308);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(97, 66);
+            btnClear.Size = new Size(200, 66);
             btnClear.TabIndex = 22;
             btnClear.Text = "C";
             btnClear.UseVisualStyleBackColor = true;
-            // 
-            // btnClearEntry
-            // 
-            btnClearEntry.Font = new Font("Segoe UI", 14F);
-            btnClearEntry.Location = new Point(258, 308);
-            btnClearEntry.Name = "btnClearEntry";
-            btnClearEntry.Size = new Size(97, 66);
-            btnClearEntry.TabIndex = 23;
-            btnClearEntry.Text = "CE";
-            btnClearEntry.UseVisualStyleBackColor = true;
-            // 
-            // btnPercent
-            // 
-            btnPercent.Font = new Font("Segoe UI", 14F);
-            btnPercent.Location = new Point(155, 308);
-            btnPercent.Name = "btnPercent";
-            btnPercent.Size = new Size(97, 66);
-            btnPercent.TabIndex = 24;
-            btnPercent.Text = "%";
-            btnPercent.UseVisualStyleBackColor = true;
             // 
             // btnMS
             // 
@@ -322,25 +288,16 @@
             // 
             // btnMR
             // 
-            btnMR.Location = new Point(233, 260);
+            btnMR.Location = new Point(258, 260);
             btnMR.Name = "btnMR";
-            btnMR.Size = new Size(81, 34);
+            btnMR.Size = new Size(87, 34);
             btnMR.TabIndex = 32;
             btnMR.Text = "MR";
             btnMR.UseVisualStyleBackColor = true;
             // 
-            // btnMM
-            // 
-            btnMM.Location = new Point(399, 260);
-            btnMM.Name = "btnMM";
-            btnMM.Size = new Size(84, 34);
-            btnMM.TabIndex = 33;
-            btnMM.Text = "M-";
-            btnMM.UseVisualStyleBackColor = true;
-            // 
             // btnMP
             // 
-            btnMP.Location = new Point(311, 260);
+            btnMP.Location = new Point(368, 260);
             btnMP.Name = "btnMP";
             btnMP.Size = new Size(90, 34);
             btnMP.TabIndex = 34;
@@ -350,11 +307,12 @@
             // lblDisplay
             // 
             lblDisplay.BorderStyle = BorderStyle.FixedSingle;
-            lblDisplay.Location = new Point(155, 46);
+            lblDisplay.Font = new Font("Segoe UI", 20F);
+            lblDisplay.Location = new Point(155, 132);
             lblDisplay.Name = "lblDisplay";
-            lblDisplay.Size = new Size(406, 194);
+            lblDisplay.Size = new Size(406, 105);
             lblDisplay.TabIndex = 35;
-            lblDisplay.TextAlign = ContentAlignment.BottomRight;
+            lblDisplay.TextAlign = ContentAlignment.MiddleRight;
             // 
             // Form1
             // 
@@ -363,12 +321,9 @@
             ClientSize = new Size(735, 805);
             Controls.Add(lblDisplay);
             Controls.Add(btnMP);
-            Controls.Add(btnMM);
             Controls.Add(btnMR);
             Controls.Add(btnMC);
             Controls.Add(btnMS);
-            Controls.Add(btnPercent);
-            Controls.Add(btnClearEntry);
             Controls.Add(btnClear);
             Controls.Add(btnBack);
             Controls.Add(btnEqual);
@@ -389,7 +344,6 @@
             Controls.Add(btnEight);
             Controls.Add(btnSeven);
             Controls.Add(btnSqrt);
-            Controls.Add(btnSquare);
             Controls.Add(btnReciprocal);
             Name = "Form1";
             Text = "Form1";
@@ -399,7 +353,6 @@
         #endregion
 
         private Button btnReciprocal;
-        private Button btnSquare;
         private Button btnSqrt;
         private Button btnSeven;
         private Button btnEight;
@@ -420,12 +373,9 @@
         private Button btnEqual;
         private Button btnBack;
         private Button btnClear;
-        private Button btnClearEntry;
-        private Button btnPercent;
         private Button btnMS;
         private Button btnMC;
         private Button btnMR;
-        private Button btnMM;
         private Button btnMP;
         private Label lblDisplay;
     }
