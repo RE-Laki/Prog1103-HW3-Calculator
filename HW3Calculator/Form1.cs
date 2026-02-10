@@ -6,5 +6,15 @@ namespace HW3Calculator
         {
             InitializeComponent();
         }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
